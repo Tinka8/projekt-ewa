@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Kontakt</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[60px] text-secondary"
+            >
+                <!-- Logo -->
+                <div class="flex flex-grow-0 items-center">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <a href="/" class="block">
+                        <img
+                            src="/img/logo_white.svg"
+                            alt="Projekt EWA - Logo bílé"
+                            width="130"
+                            height="84"
+                        />
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex-grow-0">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="#"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="#"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-white hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main class="px-[115px] pb-[140px] pt-[198px]" role="document">
+                <div class="grid grid-cols-1">
+                    <div class="col-span-1 space-y-10">
+                        <h2
+                            class="text-6xl font-bold leading-none tracking-tight text-black"
+                        >
+                            Kontakt
+                        </h2>
+
+                        <form
+                            method="POST"
+                            action="/kontakt.html"
+                            class="max-w-screen-lg space-y-6"
+                        >
+                            <div
+                                class="grid grid-cols-12 items-center text-3xl"
+                            >
+                                <div class="col-span-2">
+                                    <label class="font-bold" for="contact-name">
+                                        Meno:
+                                    </label>
+                                </div>
+                                <div class="col-span-10">
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        id="contact-name"
+                                        class="focus:border-emphasis w-full rounded-xl border-[3px] border-primary px-6 py-2"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-12 items-center text-3xl"
+                            >
+                                <div class="col-span-2">
+                                    <label
+                                        class="font-bold"
+                                        for="contact-email"
+                                    >
+                                        Email:
+                                    </label>
+                                </div>
+                                <div class="col-span-10">
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="contact-email"
+                                        class="focus:border-emphasis w-full rounded-xl border-[3px] border-primary px-6 py-2"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-12 items-center text-3xl"
+                            >
+                                <div class="col-span-2">
+                                    <label
+                                        class="font-bold"
+                                        for="contact-phone"
+                                    >
+                                        Telefón:
+                                    </label>
+                                </div>
+                                <div class="col-span-10">
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        id="contact-phone"
+                                        class="focus:border-emphasis w-full rounded-xl border-[3px] border-primary px-6 py-2"
+                                    />
+                                </div>
+                            </div>
+                            <div
+                                class="grid grid-cols-12 items-center text-sm font-bold"
+                            >
+                                <div class="col-span-2"></div>
+                                <div class="col-span-10 space-y-1">
+                                    <p>
+                                        V prípade akýchkoľvek otázok, problémov
+                                        alebo podnetov prosím kontaktujte tvorcu
+                                        aplikácie AXON PRO s.r.o.
+                                    </p>
+                                    <ul class="flex space-x-10">
+                                        <li>
+                                            <a
+                                                href="mailto:office@axonpro.sk"
+                                                class="hover:bg-emphasis inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:text-black"
+                                                >email: office@axonpro.sk</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="tel:0262410360"
+                                                class="hover:bg-emphasis inline-block rounded bg-secondary px-2 py-1 font-bold text-black hover:text-black"
+                                                >tel: 02 6241 0360</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="flex justify-end text-6xl">
+                                <button
+                                    type="submit"
+                                    class="hover:bg-emphasis inline-block rounded-lg bg-secondary px-4 py-2 font-bold text-black hover:text-black"
+                                >
+                                    Odoslať
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </main>
+
+            <footer
+                role="contentinfo"
+                class="fixed inset-x-0 bottom-0 flex justify-center bg-white pb-10 pt-2"
+            >
+                <div class="h-[15px] w-[284px] rounded-full bg-primary"></div>
+            </footer>
+        </div>
+    </body>
+</html>

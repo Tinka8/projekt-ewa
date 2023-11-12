@@ -1,8 +1,8 @@
 <!doctype html>
-<html lang="en">
+<html lang="sk">
     <head>
         <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="#" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/style.css" />
         <link rel="stylesheet" href="/lato.css" />
@@ -12,23 +12,37 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="bg-primary text-secondary fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-end"
+                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[60px] text-secondary"
             >
-                <nav>
+                <!-- Logo -->
+                <div class="flex flex-grow-0 items-center">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <a href="/" class="block">
+                        <img
+                            src="/img/logo_white.svg"
+                            alt="Projekt EWA - Logo bílé"
+                            width="130"
+                            height="84"
+                        />
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex-grow-0">
                     <ol class="flex" role="menu">
                         <li role="presentation">
                             <a
                                 role="menuitem"
-                                href="#"
-                                class="text-secondary inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight"
+                                href="/"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-white hover:text-white"
                                 >Domov</a
                             >
                         </li>
                         <li role="presentation">
                             <a
                                 role="menuitem"
-                                href="#"
-                                class="text-secondary inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight"
+                                href="/o-projekte/index.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
                                 >O projekte</a
                             >
                         </li>
@@ -36,7 +50,7 @@
                             <a
                                 role="menuitem"
                                 href="#"
-                                class="text-secondary inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
                                 >Aplikácia</a
                             >
                         </li>
@@ -44,15 +58,15 @@
                             <a
                                 role="menuitem"
                                 href="#"
-                                class="text-secondary inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
                                 >Alzheimer</a
                             >
                         </li>
                         <li role="presentation">
                             <a
                                 role="menuitem"
-                                href="#"
-                                class="text-secondary inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight"
+                                href="/kontakt.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
                                 >Kontakt</a
                             >
                         </li>
@@ -60,26 +74,27 @@
                 </nav>
             </header>
 
+            <!-- Content -->
             <main class="px-[115px] pb-[140px] pt-[198px]" role="document">
                 <div class="grid grid-cols-2">
                     <div>
                         <img
-                            src="/img/logo_cierne_navrh.png"
+                            src="/img/logo_black.svg"
                             alt="Projekt EWA - Logo černé"
                             class="mb-4 ml-3"
                             width="549"
                             height="221"
                         />
-                        <h1 class="pl-[60px] text-xl font-bold">
+                        <h2 class="pl-[60px] text-xl font-bold">
                             Early Warning of Alzheimer
-                        </h1>
+                        </h2>
                         <p
                             class="max-w-[30em] pb-14 pl-[60px] text-xl leading-tight"
                         >
                             Včasné zistenie príznakov Alzheimerovej choroby a
                             iných neurodegeneratívnych ochorení
                         </p>
-                        <hr class="border-primary max-w-[270px] border-t-2" />
+                        <hr class="max-w-[270px] border-t-2 border-primary" />
                         <h2 class="py-8 pl-[60px] text-4xl font-bold">
                             <span class="whitespace-nowrap">
                                 Chráňte si poklad, ktorý nosíte v hlave:
@@ -112,7 +127,7 @@
                 role="contentinfo"
                 class="fixed inset-x-0 bottom-0 flex justify-center bg-white pb-10 pt-2"
             >
-                <div class="bg-primary h-[15px] w-[284px] rounded-full"></div>
+                <div class="h-[15px] w-[284px] rounded-full bg-primary"></div>
             </footer>
         </div>
     </body>

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="sk">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/lato.css" />
+        <title>Projekt EWA - Média</title>
+    </head>
+
+    <body>
+        <div class="wrapper overflow-hidden">
+            <header
+                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[60px] text-secondary"
+            >
+                <!-- Logo -->
+                <div class="flex flex-grow-0 items-center">
+                    <h1 class="sr-only">Projekt EWA</h1>
+                    <a href="/" class="block">
+                        <img
+                            src="/img/logo_white.svg"
+                            alt="Projekt EWA - Logo bílé"
+                            width="130"
+                            height="84"
+                        />
+                    </a>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="flex-grow-0">
+                    <ol class="flex" role="menu">
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/o-projekte/index.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-white hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="#"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="#"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a
+                                role="menuitem"
+                                href="/kontakt.html"
+                                class="inline-block whitespace-nowrap px-8 py-[45px] text-4xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            </header>
+
+            <!-- Content -->
+            <main class="px-[115px] pb-[140px] pt-[198px]" role="document">
+                <div class="grid grid-cols-1">
+                    <div class="col-span-1 space-y-10">
+                        <h2
+                            class="text-6xl font-bold leading-none tracking-tight text-black"
+                        >
+                            Média
+                        </h2>
+
+                        <ul
+                            class="list-disc pl-10 text-xl font-bold text-primary"
+                        >
+                            <li>
+                                <p>
+                                    Ide o interdisciplinárny výskumný a vývojový
+                                    projekt, ktorý integruje do jednej aplikácie
+                                    odborné znalosti psychológov, neurológov a
+                                    viacerých profesií IT špecialistov.
+                                </p>
+                            </li>
+                        </ul>
+
+                        <p>
+                            Poruchy řeči (špecifické jazykové deficity) patria
+                            medzi prvé symptómy degeneratívnych ochorení mozgu
+                            (Alzheimerova choroba, primárna progresívna afázia,
+                            Parkinsonova choroba a i.). Ich senzitívna a včasná
+                            detekcia môže zachytiť proces mozgovej patológie a
+                            tak včas zahájiť terapiu pacientov s cieľom
+                            stabilizovania stavu a spomalenia postupu ochorenia.
+                        </p>
+
+                        <ul class="flex space-x-6">
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:border-emphasis box-content block overflow-hidden rounded-lg border-[20px] border-secondary leading-none"
+                                >
+                                    <img
+                                        src="/img/media/ranajky.png"
+                                        width="490"
+                                        height="250"
+                                        class="block h-[250px] w-[490px] object-cover object-bottom"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#"
+                                    class="hover:border-emphasis box-content block overflow-hidden rounded-lg border-[20px] border-secondary leading-none"
+                                >
+                                    <img
+                                        src="/img/media/clanek.png"
+                                        width="490"
+                                        height="250"
+                                        class="block h-[250px] w-[490px] object-cover object-bottom"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+
+            <footer
+                role="contentinfo"
+                class="fixed inset-x-0 bottom-0 flex justify-center bg-white pb-10 pt-2"
+            >
+                <div class="h-[15px] w-[284px] rounded-full bg-primary"></div>
+            </footer>
+        </div>
+    </body>
+</html>
