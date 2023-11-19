@@ -11,115 +11,141 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[20px] lg:px-[60px] text-secondary "
+                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[20px] py-2 items-center  md:py-0 lg:px-[60px] text-secondary"
             >
                 <!-- Logo -->
                 <div class="flex flex-grow-0 items-center">
                     <h1 class="sr-only">Projekt EWA</h1>
                     <a href="/" class="block">
-                        <img
-                            src="/img/logo_white.svg"
+                        <img 
+                            src="/img/logo_white.svg" 
                             alt="Projekt EWA - logo biele"
-                            class="w-[90px] h-[45px] lg:w-[130px] lg:h-[84px]"
+                            class="w-[90px] h-[45px] lg:w-[130px] lg:h-[84px]" 
                         />
                     </a>
                 </div>
-
+               
                 <!-- Navigation -->
                 <nav class="flex-grow-0">
-                    <ol class="flex" role="menu">
-                        <li role="presentation">
-                            <a 
-                                role="menuitem" 
-                                href="/"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
-                                >Domov</a
-                            >
-                        </li>
-                        <li role="presentation">
-                            <a 
-                                role="menuitem" 
-                                href="/o-projekte/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
-                                >O projekte</a
-                            >
-                        </li>
-                        <li role="presentation">
-                            <a 
-                                role="menuitem" 
-                                href="/aplikacia.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
-                                >Aplikácia</a
-                            >
-                        </li>
-                        <li role="presentation">
-                            <a 
-                                role="menuitem" 
-                                href="#"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
-                                >Alzheimer</a
-                            >
-                        </li>
-                        <li role="presentation">
-                            <a 
-                                role="menuitem" 
-                                href="/kontakt.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
-                                >Kontakt</a
-                            >
-                        </li>
-                    </ol>
+                    <div id="burger-menu">
+                        <!-- burger -->
+                        <span></span>
+                        <ol class="flex" role="menu">
+                            
+                            <li role="presentation">
+                                <a 
+                                
+                                    role="menuitem" 
+                                    href="/"
+                                    class=" text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                    >Domov</a
+                                >
+                            </li>
+                            <li role="presentation">
+                                <a 
+                                    role="menuitem" 
+                                    href="/o-projekte/index.html"
+                                    class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                    >O projekte</a
+                                >
+                            </li>
+                            <li role="presentation">
+                                <a 
+                                    role="menuitem" 
+                                    href="/aplikacia.html"
+                                    class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                    >Aplikácia</a
+                                >
+                            </li>
+                            <li role="presentation">
+                                <a 
+                                    role="menuitem" 
+                                    href="#"
+                                    class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                    >Alzheimer</a
+                                >
+                            </li>
+                            <li role="presentation">
+                                <a 
+                                    role="menuitem" 
+                                    href="/kontakt.html"
+                                    class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                    >Kontakt</a
+                                >
+                            </li>
+                        </ol>
+                    </div>
                 </nav>
+                              
+
+             
             </header>
+            
 
             <!-- Content -->
-            <main class="px-[115px] pb-[140px] pt-[198px]" role="document">
+            <main role="document">
                 <div class="grid grid-cols-2">
-                    <div>
-                        <img
-                            src="/img/logo_black.svg"
-                            alt="Projekt EWA - logo čierne"
-                            class="mb-4 ml-3"
-                            width="549"
-                            height="221"
-                        />
-                        <h2 class="pl-[60px] text-xl font-bold">
-                            Early Warning of Alzheimer
-                        </h2>
-                        <p
-                            class="max-w-[30em] pb-14 pl-[60px] text-xl leading-tight"
-                        >
-                            Včasné zistenie príznakov Alzheimerovej choroby a
-                            iných neurodegeneratívnych ochorení
-                        </p>
-                        <hr class="max-w-[270px] border-t-2 border-primary" />
-                        <h2 class="py-8 pl-[60px] text-4xl font-bold">
-                            <span class="whitespace-nowrap">
-                                Chráňte si poklad, ktorý nosíte v hlave:
-                            </span>
-                            <br />
-                            <span class="whitespace-nowrap">
-                                spomienky a zdravú myseľ
-                            </span>
-                        </h2>
-                        <div class="max-w-[37em] pl-[60px]">
-                            <video autoplay muted>
-                                <source
-                                    src="/reklamne_final.mp4"
-                                    type="video/mp4"
-                                />
-                            </video>
+                    <!-- mobile menu -->
+                    <div
+                        id="menu"  
+                        class="">
+                        <ol>
+                            <li><a href="#" class="text-green-400">dedwqwe</a></li>
+                            <li><a href="#">eqweqweqw</a></li>
+                            <li><a href="#">eqweqwewqe</a></li>
+                            <li><a href="#">eqweqweqwe</a></li>
+                            <li><a href="#">dwedwdwed</a></li>
+                        </ol>
+                    </div>
+                    <div class="sm:px-[115px] px-[10px] pb-[140px] pt-[198px]">
+                        <div>
+                            <img
+                                src="/img/logo_black.svg"
+                                alt="Projekt EWA - logo čierne"
+                                class="mb-4 ml-3"
+                                width="549"
+                                height="221"
+                            />
+                            <h2 class="pl-[60px] text-xl font-bold">
+                                Early Warning of Alzheimer
+                            </h2>
+                            <p
+                                class="max-w-[30em] pb-14 pl-[60px] text-xl leading-tight"
+                            >
+                                Včasné zistenie príznakov Alzheimerovej choroby a
+                                iných neurodegeneratívnych ochorení
+                            </p>
+                            <hr class="max-w-[270px] border-t-2 border-primary" />
+                            <h2 class="py-8 pl-[60px] text-4xl font-bold">
+                                <span class="whitespace-nowrap">
+                                    Chráňte si poklad, ktorý nosíte v hlave:
+                                </span>
+                                <br />
+                                <span class="whitespace-nowrap">
+                                    spomienky a zdravú myseľ
+                                </span>
+                            </h2>
+                            <div class="max-w-[37em] pl-[60px]">
+                                <video autoplay muted>
+                                    <source
+                                        src="/reklamne_final.mp4"
+                                        type="video/mp4"
+                                    />
+                                </video>
+                            </div>
+                        </div>
+                        <div class="relative">
+                            <img
+                                src="/img/illu_navrh.png"
+                                alt="Dvaja ľudia s tabletmi stojaci pred mikrofónom"
+                                class="absolute -right-14 bottom-0"
+                            />
                         </div>
                     </div>
-                    <div class="relative">
-                        <img
-                            src="/img/illu_navrh.png"
-                            alt="Dvaja ľudia s tabletmi stojaci pred mikrofónom"
-                            class="absolute -right-14 bottom-0"
-                        />
-                    </div>
                 </div>
+               
             </main>
+                            
 
             <footer role="contentinfo">
                 <div class="flex justify-center pb-4 pt-2">
@@ -176,5 +202,21 @@
                 </div>
             </footer>
         </div>
+        
+
+      
+
+        <script>
+      
+            var burgerMenu = document.getElementById('burger-menu');
+                var overlay = document.getElementById('menu');
+                burgerMenu.addEventListener('click', function () {
+                    this.classList.toggle("close");
+                    overlay.classList.toggle("overlay");
+                });
+
+
+        </script>
+        
     </body>
 </html>
