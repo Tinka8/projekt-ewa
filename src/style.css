@@ -102,7 +102,7 @@ a:hover {
       visibility: visible;
       opacity: 1;
       padding-top: 100px;
-      background: #8e7a7a;
+      background: #fff;
     }
   
     #menu li {
@@ -110,10 +110,10 @@ a:hover {
     }
   
     #menu a {
-      
+      color: #111;
       display: block;
-      
-      margin-bottom: 30px;
+      font-size: x-large;
+      margin-bottom: 40px;
       
     }
 
