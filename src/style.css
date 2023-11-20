@@ -20,7 +20,7 @@ a:hover {
 @media (max-width: 640px) {
   #burger-menu {
     cursor: pointer;
-    height: 30px;
+    height: 20px;
     width: 30px;
     overflow: visible;
     position: relative;
