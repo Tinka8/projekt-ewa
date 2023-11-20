@@ -12,61 +12,71 @@
 
 <body>
     <div class="wrapper overflow-hidden">
-        <header class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[60px] text-secondary">
+        <header class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[20px] lg:px-[60px] text-secondary">
             <!-- Logo -->
             <div class="flex flex-grow-0 items-center">
                 <h1 class="sr-only">Projekt EWA</h1>
-                <a href="/" class="block">
-                    <img src="/img/logo_white.svg" alt="Projekt EWA - Logo bílé" width="130" height="84" />
-                </a>
+                <div class="flex justify-between items-center">
+                    <a href="/" class="block">
+                        <img src="/img/logo_white.svg" alt="Projekt EWA - Logo biele"
+                            class="w-[70px] md:w-[90px]  lg:w-[130px]  lg:h-[84px] h-[60px]" />
+                    </a>
+                    <div id="burger-menu">
+                        <span></span>
+                    </div>
+                </div>
+              
             </div>
 
-                <!-- Navigation -->
-                <nav class="flex-grow-0">
-                    <ol class="flex" role="menu">
-                        <li role="presentation">
-                            <a role="menuitem" href="/"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white md:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Domov</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" href="/o-projekte/index.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white md:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">O
-                                projekte</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" href="/aplikacia.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white md:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Aplikácia</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" href="#"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white md:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-nonee">Alzheimer</a>
-                        </li>
-                        <li role="presentation">
-                            <a role="menuitem" href="/kontakt.html"
-                                class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white md:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Kontakt</a>
-                        </li>
-                    </ol>
-                </nav>
+            <!-- Navigation -->
+            <nav class="flex-grow-0">
+                <ol class="flex" role="menu">
+                    <li role="presentation">
+                        <a role="menuitem" href="/"
+                            class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Domov</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="/o-projekte/index.html"
+                            class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">O
+                            projekte</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="/aplikacia.html"
+                            class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Aplikácia</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="#"
+                            class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Alzheimer</a>
+                    </li>
+                    <li role="presentation">
+                        <a role="menuitem" href="/kontakt.html"
+                            class="text-md hidden whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none">Kontakt</a>
+                    </li>
+                </ol>
+            </nav>
         </header>
 
         <!-- Content -->
-        <main class="px-[115px] pb-[140px] pt-[198px]" role="document">
+        <main class="px-[20px] pb-[80px] pt-[60px] md:px-[115px] md:pb-[140px] md:pt-[198px]" role="document">
             <div id="burger-menu">
                 <span></span>
             </div>
-            <div class="grid grid-cols-2">
+            <div class="grid grid-cols-1 md:grid-cols-2">
                 <div>
-                    <img src="/img/logo_black.svg" alt="Projekt EWA - Logo černé" class="mb-4 ml-3" width="549"
-                        height="221" />
-                    <h2 class="pl-[60px] text-xl font-bold">
+                    <img 
+                        src="/img/logo_black.svg" 
+                        alt="Projekt EWA - Logo čierne" 
+                        class="md:mb-4 md:ml-3 w-[160px] h-[120px] md:w-[550px] md:h-[220px]" 
+                    />
+                    <h2 class="pl-[20px] md:pl-[60px] text-lg md:text-xl font-bold">
                         Early Warning of Alzheimer
                     </h2>
-                    <p class="max-w-[30em] pb-14 pl-[60px] text-xl leading-tight">
+                    <p class="max-w-[30em] pb-14 pl-[20px] md:pl-[60px] text-md md:text-xl leading-tight">
                         Včasné zistenie príznakov Alzheimerovej choroby a
                         iných neurodegeneratívnych ochorení
                     </p>
                     <hr class="max-w-[270px] border-t-2 border-primary" />
-                    <h2 class="py-8 pl-[60px] text-4xl font-bold">
+                    <h2 class="py-8 pl-[20px] md:pl-[60px] text-lg md:text-4xl font-bold">
                         <span class="whitespace-nowrap">
                             Chráňte si poklad, ktorý nosíte v hlave:
                         </span>
@@ -75,7 +85,7 @@
                             spomienky a zdravú myseľ
                         </span>
                     </h2>
-                    <div class="max-w-[37em] pl-[60px]">
+                    <div class="max-w-[37em] pl-[20px] md:pl-[60px]">
                         <video autoplay muted>
                             <source src="/reklamne_final.mp4" type="video/mp4" />
                         </video>
@@ -83,14 +93,14 @@
                 </div>
                 <div class="relative">
                     <img src="/img/illu_navrh.png" alt="Dva lidé s tablety stojící před ohromným mikrofonem"
-                        class="absolute -right-14 bottom-0" />
+                        class="relative md:absolute md:-right-14 bottom-0" />
                 </div>
             </div>
         </main>
 
         <footer role="contentinfo">
             <div class="flex justify-center pb-4 pt-2">
-                <div class="h-[15px] w-[284px] rounded-full bg-primary"></div>
+                <div class="h-[10px] md:h-[15px] w-[284px] rounded-full bg-primary"></div>
             </div>
             <div class="w-full bg-[#152036] py-12">
                 <ul role="menu" class="flex justify-center space-x-8">
