@@ -30,7 +30,7 @@ a:hover {
   #burger-menu span,
   #burger-menu span:before,
   #burger-menu span:after {
-    background: #fffdfd;
+    background: #fff;
     display: block;
     height: 3px;
     opacity: 1;
