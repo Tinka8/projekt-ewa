@@ -11,29 +11,33 @@
     <body>
         <div class="wrapper overflow-hidden">
             <header
-                class="fixed inset-x-0 top-0 z-10 flex flex-grow-0 justify-between bg-primary px-[60px] text-secondary"
+                class="fixed inset-x-0 top-0 z-10 sm:flex flex-grow-0 justify-between bg-primary text-secondary sm:px-[20px] lg:px-[60px]"
             >
                 <!-- Logo -->
-                <div class="flex flex-grow-0 items-center">
+                <div class="flex w-full flex-grow-0 items-center px-5 sm:px-0">
                     <h1 class="sr-only">Projekt EWA</h1>
-                    <a href="/" class="block">
-                        <img
-                            src="/img/logo_white.svg"
-                            alt="Projekt EWA - logo biele"
-                            width="130"
-                            height="84"
-                        />
-                    </a>
+                    <div class="flex w-full items-center justify-between">
+                        <a href="/" class="block">
+                            <img 
+                                src="/img/logo_white.svg" 
+                                alt="Projekt EWA - Logo biele"
+                                class="w-[70px] h-[60px] md:w-[90px] lg:w-[130px] lg:h-[84px]" 
+                            />
+                        </a>
+                        <div id="burger-menu">
+                            <span></span>
+                        </div>
+                    </div>
                 </div>
-
+            
                 <!-- Navigation -->
-                <nav class="flex-grow-0">
+                <nav class="flex-grow-0 hidden sm:block">
                     <ol class="flex" role="menu">
                         <li role="presentation">
                             <a 
                                 role="menuitem" 
                                 href="/"
-                                class="inline-block whitespace-nowrap px-8 py-[35px] text-3xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
                                 >Domov</a
                             >
                         </li>
@@ -41,7 +45,7 @@
                             <a 
                                 role="menuitem" 
                                 href="/o-projekte/index.html"
-                                class="inline-block whitespace-nowrap px-8 py-[35px] text-3xl font-medium leading-none tracking-tight text-white hover:text-white"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
                                 >O projekte</a
                             >
                         </li>
@@ -49,7 +53,7 @@
                             <a 
                                 role="menuitem" 
                                 href="/aplikacia.html"
-                                class="inline-block whitespace-nowrap px-8 py-[35px] text-3xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
                                 >Aplikácia</a
                             >
                         </li>
@@ -57,7 +61,7 @@
                             <a 
                                 role="menuitem" 
                                 href="#"
-                                class="inline-block whitespace-nowrap px-8 py-[35px] text-3xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
                                 >Alzheimer</a
                             >
                         </li>
@@ -65,7 +69,53 @@
                             <a 
                                 role="menuitem" 
                                 href="/kontakt.html"
-                                class="inline-block whitespace-nowrap px-8 py-[35px] text-3xl font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                class="hidden text-md whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white sm:inline-block md:px-4 md:text-xl lg:px-8 lg:py-[35px] lg:text-3xl lg:leading-none"
+                                >Kontakt</a
+                            >
+                        </li>
+                    </ol>
+                </nav>
+            
+                <!-- Mobile navigation -->
+                <nav class="flex-grow-0 hidden sm:hidden" id="mobile-menu">
+                    <ol class="py-4" role="menu">
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Domov</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/o-projekte/index.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-white hover:text-white"
+                                >O projekte</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/aplikacia.html"
+                                class="block underline text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Aplikácia</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="#"
+                                class="underline block text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
+                                >Alzheimer</a
+                            >
+                        </li>
+                        <li role="presentation">
+                            <a 
+                                role="menuitem" 
+                                href="/kontakt.html"
+                                class="block underline  text-md text-center whitespace-nowrap px-2 py-[20px] font-medium leading-none tracking-tight text-secondary hover:text-white"
                                 >Kontakt</a
                             >
                         </li>
@@ -260,5 +310,15 @@
                 </div>
             </footer>
         </div>
+
+        <script>
+            var burgerMenu = document.getElementById('burger-menu');
+            var mobileMenu = document.getElementById('mobile-menu');
+
+            burgerMenu.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+                burgerMenu.classList.toggle('close');
+            });
+        </script>
     </body>
 </html>
